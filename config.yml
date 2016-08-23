@@ -1,0 +1,5 @@
+render-distance: 25
+framerate: 3
+particles-per-frame: 1000
+max-ping: 800
+debug-mode: false

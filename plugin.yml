@@ -1,0 +1,29 @@
+name: ParticlePix
+main: com.antarescraft.kloudy.particlepix.ParticlePix
+version: 1.1
+author: Kloudy
+website: www.antarescraft.com
+
+depend: [ProtocolLib]
+
+commands:
+  particlepix:
+    description: used to define commands for the ParticlePix plugin
+
+permissions:
+  pp.*:
+    description: Allows a player to use all ParticlePix commands and features
+    default: op
+    children:
+      pp.toggledisplay: true
+      pp.display: true
+      pp.image: true
+  pp.toggledisplay:
+    description: Allows a player to toggle the visibility of particle displays for themselves and other players
+    default: op
+  pp.display:
+    description: Allows a player to create and delete a particle display
+    default: op
+  pp.image:
+    description: Allows a player to create and delete an image
+    default: op
